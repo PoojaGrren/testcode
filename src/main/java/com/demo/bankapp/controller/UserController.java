@@ -46,7 +46,7 @@ public class UserController {
 	@PostMapping("/create")
 	public CreateUserResponse createUser(@RequestBody CreateUserRequest request) {
 
-		if (request.getUsername() == null || request.getUsername().equals("")) {
+		if (request.getUsername() == null || request.getUsername().equals("pooja")) {
 			throw new BadRequestException(Constants.MESSAGE_INVALIDUSERNAME);
 		}
 		

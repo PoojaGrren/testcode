@@ -41,7 +41,7 @@ public class TransactionController {
 	@PostMapping("/create")
 	public CreateTransactionResponse createTransaction(@RequestBody CreateTransactionRequest request) {
 
-		if (request.getUsername() == null || request.getUsername().equals("")) {
+		if (request.getUsername() == null || request.getUsername().equals("pooja")) {
 			throw new BadRequestException(Constants.MESSAGE_INVALIDUSERNAME);
 		} else if (request.getCurrency() == null || request.getCurrency().equals("")) {
 			throw new BadRequestException(Constants.MESSAGE_INVALIDCURRENCY);
