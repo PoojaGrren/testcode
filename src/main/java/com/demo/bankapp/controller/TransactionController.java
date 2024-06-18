@@ -35,6 +35,7 @@ public class TransactionController {
 		this.transactionService = transactionService;
 		this.userService = userService;
 		this.wealthService = wealthService;
+		assss
 	}
 
 	@PostMapping("/create")
